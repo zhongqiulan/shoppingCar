@@ -1,0 +1,90 @@
+.section1 {
+    background: url("../images/01/bg.png") center bottom no-repeat;
+}
+
+.section1 .products {
+    /* 插件已经帮我们给父盒子添加了position: relative,不需要要再手动加了 */
+    position: absolute;
+    left: 50%;
+    margin-left: -412px;
+    bottom: 200px;
+}
+
+.section1 .sofa {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 300px;
+
+    animation: sofa 1s infinite;
+}
+
+.section1 .ball {
+    position: absolute;
+    right: 50px;
+    top: 80px;
+
+    animation: ball 2s infinite;
+}
+
+@keyframes ball {
+    50% {
+        top: 60px;
+    }
+}
+
+@keyframes sofa {
+    50% {
+        bottom: 320px;
+    }
+}
+
+/* 第二屏 */
+.section2 {
+    background: url("../images/02/bg.png") no-repeat center bottom;
+}
+
+.section2 .search01 {
+    position: absolute;
+    left: 50%;
+    margin-left: 410px;
+    bottom: 300px;
+}
+
+.section2 .search02 {
+    position: absolute;
+    left: 50%;
+    margin-left: -111px;
+    bottom: 300px;
+    display: none;
+}
+
+
+.box {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    /* background-color: rgba(160, 160, 160, 0.7); */
+    bottom: 100px;
+    /* display: none; */
+}
+
+
+.section2 .sofas {
+    position: absolute;
+    right: 80px;
+    bottom: 110px;
+
+    height: 0;
+}
+
+/* .section2 .search03 {
+    position: absolute;
+    left: 50%;
+    margin-left: 130px;
+    bottom: 450px;
+    height: 30px;
+} */
+
